@@ -1,0 +1,40 @@
+{
+  "code": "blockchain-lthn",
+  "version": "5.0.2",
+  "tags": {
+    "ticker": "lthn"
+  },
+  "type": "bin",
+  "name": "Lethean Blockchain",
+  "install": "lthn",
+  "uninstall": [
+    {"rm": "/conf/lthn"},
+    {"rm": "/data/lthn"}
+  ],
+  "commands": {
+    "chain.export": "lethean-blockchain-export --data-dir {data-dir}",
+    "chain.import": "lethean-blockchain-import --data-dir {data-dir}",
+    "chain.start": "letheand --data-dir {data-dir}",
+    "wallet.rpc.start": "lethean-wallet-rpc --data-dir {data-dir}",
+    "wallet.cli.comand": "lethean-wallet-cli --data-dir {data-dir}",
+    "wallet.cli.tty": "lethean-blockchain-import --data-dir {data-dir}",
+    "wallet.new.tty": "lethean-blockchain-import --data-dir {data-dir}",
+    "wallet.new.key.seed": "lethean-blockchain-import --data-dir {data-dir}",
+    "wallet.new.key.public": "lethean-blockchain-import --data-dir {data-dir}",
+    "wallet.new.key.private": "lethean-blockchain-import --data-dir {data-dir}"
+  },
+  "downloads": {
+    "x86_64": {
+      "darwin": {
+        "url": "https://github.com/letheanVPN/blockchain-iz/releases/latest/download/lethean-cli-macos.zip"
+      },
+      "linux": {
+        "url": "https://github.com/letheanVPN/blockchain-iz/releases/latest/download/lethean-cli-linux.tar"
+      },
+      "windows": {
+        "url": "https://github.com/letheanVPN/blockchain-iz/releases/latest/download/lethean-cli-windows.tar"
+      }
+    }
+  }
+
+}
